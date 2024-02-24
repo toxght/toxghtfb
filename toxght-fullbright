@@ -1,11 +1,1 @@
-local Light = game:GetService("Lighting")
-
-function dofullbright()
-Light.Ambient = Color3.new(1, 1, 1)
-Light.ColorShift_Bottom = Color3.new(1, 1, 1)
-Light.ColorShift_Top = Color3.new(1, 1, 1)
-end
-
-dofullbright()
-
-Light.LightingChanged:Connect(dofullbright)
+local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v9,v10)local v11={};for v15=1, #v9 do v6(v11,v0(v4(v1(v2(v9,v15,v15 + 1 )),v1(v2(v10,1 + (v15% #v10) ,1 + (v15% #v10) + 1 )))%256 ));end return v5(v11);end local v8=game:GetService(v7("\253\202\220\45\242\178\201\25","\126\177\163\187\69\134\219\167"));function dofullbright()v8.Ambient=Color3.new(1,620 -(555 + 64) ,1);v8.ColorShift_Bottom=Color3.new(932 -(857 + 74) ,1,569 -(367 + 201) );v8.ColorShift_Top=Color3.new(928 -(214 + 713) ,1 + 0 ,1 + 0 );end dofullbright();v8.LightingChanged:Connect(dofullbright);
